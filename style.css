@@ -31,10 +31,10 @@ body {
 
 .container {
   height: 450px;
-  width: 675px;
+  width: 616px;
   background-color: var(--white);
   display: flex;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .container .thumbnail {
@@ -43,7 +43,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 1rem 0rem 0rem 1rem;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
 }
 
 .container .product-detail {
@@ -133,7 +133,7 @@ body {
     height: 40%;
     width: 100%;
     background-image: url(./images/image-product-mobile.jpg);
-    border-radius: 1rem 1rem 0rem 0rem;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
   }
 
   .container .product-detail {
@@ -158,5 +158,24 @@ body {
 
   .container .product-detail .product-price {
     margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    height: 604px;
+    width: 344px;
+  }
+
+  .container .product-detail {
+    padding: 1.5rem;
+  }
+
+  .container .product-detail .product-name {
+    font-size: 2rem;
+  }
+
+  .container .product-detail .product-desc {
+    font-size: 0.88rem;
   }
 }
